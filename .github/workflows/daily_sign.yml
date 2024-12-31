@@ -5,8 +5,10 @@ name: 签到薅羊毛
 
 on:
   schedule:
-    # 此处是UTC时间，对应北京时间早八点
-    - cron : '00 00 * * *'
+    # 北京时间早上10点 (UTC时间凌晨2点)
+    - cron: '0 2 * * *'
+    # 北京时间下午4点 (UTC时间上午8点)
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 permissions:
